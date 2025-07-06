@@ -1,0 +1,36 @@
+{
+  "name": "multi-agent-email-triage",
+  "version": "1.0.0",
+  "description": "A multi-agent email triage system using LangChain.js and LangGraph",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' tsc",
+    "start": "node dist/index.js",
+    "dev": "NODE_OPTIONS='--max-old-space-size=8192' ts-node src/index.ts",
+    "demo": "NODE_OPTIONS='--max-old-space-size=8192' ts-node src/simple-demo.ts",
+    "test": "npm run demo"
+  },
+  "keywords": [
+    "multi-agent",
+    "email",
+    "triage",
+    "langchain",
+    "langgraph",
+    "ai",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/core": "^0.3.18",
+    "@langchain/langgraph": "^0.2.19",
+    "@langchain/openai": "^0.3.17",
+    "dotenv": "^16.4.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
